@@ -1,1 +1,1 @@
-# mq-diplom
+# mq-diplom test for change
