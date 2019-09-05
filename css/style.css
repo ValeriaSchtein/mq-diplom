@@ -22,7 +22,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -139,6 +140,11 @@ body {
     margin-right: 10px;
 }
 
+.text-store {
+    display: block;
+    font-weight: 700;
+}
+
 
 /*======MAIN======*/
 
@@ -172,7 +178,7 @@ body {
 }
 
 .items-menu {
-    padding: 60px 6.25% 55px 6.25%;
+    padding: 60px 6.25% 55px;
     font-size: 1.5rem;
     line-height: 1.8rem;
     letter-spacing: 0.75px;
@@ -284,6 +290,59 @@ body {
 /*======FOOTER------*/
 
 .footer {
-    padding-left: 6.25%;
-    padding-right: 6.25%;
+    box-sizing: border-box;
+    background-image: url("../img/game_767.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding-top: 31%;
+    padding-bottom: 3.5%;
+}
+
+.footer::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.logo-footer {
+    display: flex;
+    width: 72px;
+    height: 74px;
+    background: linear-gradient(#754ed7, #51349e);
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-small {
+    width: 47px;
+    height: 55px;
+}
+
+.download {
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+    margin-top: 60px;
+}
+
+.show {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.7px;
+    color: #9b8ec1;
+}
+
+.down {
+    margin-top: 82px;
+    align-self: center;
 }
