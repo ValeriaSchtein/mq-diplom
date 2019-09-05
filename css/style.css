@@ -97,7 +97,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 2.8rem;
-    line-height: 3.1rem;
+    line-height: 1.1em;
     letter-spacing: 1.4px;
     margin-top: 137px;
 }
@@ -108,7 +108,7 @@ body {
 
 .slogan-item:nth-child(2) {
     width: 220px;
-    margin-top: 29px;
+    margin-top: 30px;
     margin-right: 22px;
     align-self: flex-end;
 }
@@ -116,18 +116,25 @@ body {
 .stores {
     margin-top: 90px;
     align-self: center;
+    width: 100%;
 }
 
 .link {
     display: flex;
-    width: 280px;
+    width: 100%;
     height: 35px;
     background-color: #5e42b0;
     border-radius: 17px;
-    padding-left: 80px;
+    padding-left: calc(50% - 55px);
     font-size: 0.8rem;
     align-items: center;
     text-transform: uppercase;
+}
+
+.link:hover {
+    background-color: #c1c1c1;
+    color: #51349e;
+    transition: 0.3s;
 }
 
 .link:nth-child(2) {
@@ -345,4 +352,57 @@ body {
 .down {
     margin-top: 82px;
     align-self: center;
+}
+
+
+/*=====WIDTH 641px-960px===*/
+
+
+/*----header---*/
+
+@media (min-width: 641px) and (max-width: 960px) {
+    .welcome {
+        padding-top: 5.5%;
+        padding-bottom: 11.7%;
+    }
+    .container {
+        padding-left: 7.8%;
+        padding-right: 7.8%;
+    }
+    .logo-big {
+        width: 205px;
+        height: 56px;
+    }
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        font-size: 6.4rem;
+        margin-top: 180px;
+    }
+    .slogan-item:nth-child(2) {
+        margin-right: 10px;
+        align-self: flex-end;
+        width: 488px;
+        margin-top: 0;
+    }
+    .stores {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 312px;
+        align-items: baseline;
+    }
+    .link {
+        width: 48%;
+        height: 77px;
+        justify-content: center;
+        font-size: 1.4rem;
+        border-radius: 40px;
+        padding-left: 0;
+    }
+    .link svg {
+        width: 40px;
+        height: 45px;
+        margin-right: 28px;
+    }
+    /* -----main-----*/
 }
