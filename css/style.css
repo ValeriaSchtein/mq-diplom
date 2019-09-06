@@ -3,21 +3,16 @@
 * {
     padding: 0;
     margin: 0;
-    border: 0;
-    font-family: 'Open Sans', Arial, sans-serif;
-    text-decoration: none;
-    list-style: none;
-    color: inherit;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 a {
+    text-decoration: none;
     cursor: pointer;
 }
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
 }
 
 h1,
@@ -45,7 +40,7 @@ img {
 /*========COMMONE========*/
 
 body {
-    min-width: 320px;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 
@@ -84,7 +79,7 @@ body {
     z-index: 2;
 }
 
-.wrapper {
+.logo {
     align-self: center;
 }
 
@@ -129,6 +124,8 @@ body {
     font-size: 0.8rem;
     align-items: center;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .link:hover {
@@ -262,16 +259,13 @@ body {
 }
 
 .active-items {
-    padding: 0 6.25% 70px;
-    font-size: 1.6rem;
-    line-height: 2rem;
-    letter-spacing: 0.8px;
+    padding: 0 4% 100px;
     margin-top: -60px;
     position: relative;
 }
 
-.title {
-    font-size: 2.8rem;
+.active .title {
+    font-size: 8rem;
     margin-top: 24px;
 }
 
@@ -405,4 +399,129 @@ body {
         margin-right: 28px;
     }
     /* -----main-----*/
+    .athlets,
+    .players {
+        padding-top: 85px;
+    }
+    .title-type {
+        font-size: 8.8rem;
+        line-height: 0.9em;
+    }
+    .athlets .title-type {
+        padding-left: 38%;
+    }
+    .menu {
+        margin-top: 60px;
+    }
+    .athlets::before {
+        content: "";
+        background-image: url("../img/footballer_497.png");
+        background-size: 497px 699px;
+        top: 95px;
+        right: 38%;
+    }
+    .items-menu {
+        font-size: 1.6rem;
+        line-height: 1.75em;
+        letter-spacing: 0.8px;
+    }
+    .athlets .items-menu {
+        padding: 42px 4% 36px 38%;
+    }
+    .title-items {
+        font-size: 3.2rem;
+    }
+    .number {
+        font-size: 1.8rem;
+        margin-right: 14px;
+        margin-top: -2px;
+    }
+    .number::after {
+        content: "";
+        width: 19px;
+        height: 5px;
+    }
+    .players .title-type {
+        padding-left: 4.4%;
+        padding-right: 38%;
+    }
+    .players::before {
+        content: "";
+        background-image: url("../img/basketballer_436.png");
+        background-size: 436px 565px;
+        top: 40px;
+        right: 0;
+        width: 436px;
+    }
+    .players .items-menu {
+        padding: 42px 40% 36px 4%;
+    }
+    .items-menu:first-child {
+        padding-top: 0px;
+        background-color: #ffffff;
+    }
+    .text {
+        margin-top: 32px;
+    }
+    .active-items {
+        padding: 0 9.3% 105px 4%;
+        margin-top: -90px;
+        position: relative;
+    }
+    .active .title {
+        margin-top: 54px;
+        line-height: 0.8em;
+    }
+    .square {
+        width: 116px;
+        height: 116px;
+    }
+    .active .number {
+        font-size: 2.4rem;
+        line-height: 1.4em;
+        letter-spacing: 1.2px;
+    }
+    .active .number::after {
+        content: "";
+        width: 28px;
+        height: 5px;
+    }
+    .active .text {
+        font-size: 2.4rem;
+        line-height: 1.1em;
+        letter-spacing: 1.2px;
+        margin-top: 37px;
+    }
+    /*-----footer-----*/
+    .footer {
+        padding-top: 16.4%;
+    }
+    .container {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .logo-footer {
+        width: 130px;
+        height: 137px;
+        border-radius: 20%;
+    }
+    .logo-small {
+        width: 103px;
+        height: 90px;
+    }
+    .download {
+        font-size: 8rem;
+        line-height: 1em;
+        margin-top: 80px;
+    }
+    .show {
+        font-size: 3.6rem;
+        line-height: 1em;
+    }
+    .footer-store {
+        margin-top: 285px;
+    }
+    .down {
+        margin-top: 55px;
+    }
 }
