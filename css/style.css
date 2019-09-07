@@ -99,13 +99,10 @@ body {
 
 .slogan-item {
     display: block;
-}
-
-.slogan-item:nth-child(2) {
-    width: 220px;
     margin-top: 30px;
-    margin-right: 22px;
     align-self: flex-end;
+    min-width: 215px;
+    margin-left: 16%;
 }
 
 .stores {
@@ -183,9 +180,6 @@ body {
 
 .items-menu {
     padding: 60px 6.25% 55px;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    letter-spacing: 0.75px;
 }
 
 .items-menu:first-child {
@@ -201,6 +195,10 @@ body {
     background-color: #8765dd;
 }
 
+.items-menu:nth-child(3) .text {
+    color: #ffffff;
+}
+
 .title-items {
     display: flex;
 }
@@ -210,7 +208,7 @@ body {
     font-weight: 700;
     color: #000000;
     margin-right: 10px;
-    margin-top: -2px;
+    margin-top: 3px;
 }
 
 .number:nth-child(3) {
@@ -256,6 +254,9 @@ body {
 
 .text {
     margin-top: 27px;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.75px;
 }
 
 .active-items {
@@ -265,7 +266,7 @@ body {
 }
 
 .active .title {
-    font-size: 8rem;
+    font-size: 2.8rem;
     margin-top: 24px;
 }
 
@@ -373,17 +374,15 @@ body {
         font-size: 6.4rem;
         margin-top: 180px;
     }
-    .slogan-item:nth-child(2) {
-        margin-right: 10px;
-        align-self: flex-end;
-        width: 488px;
+    .slogan-item {
+        min-width: 488px;
         margin-top: 0;
+        margin-left: 15.6%;
     }
     .stores {
         display: flex;
         justify-content: space-between;
         margin-top: 312px;
-        align-items: baseline;
     }
     .link {
         width: 48%;
@@ -398,13 +397,16 @@ body {
         height: 45px;
         margin-right: 28px;
     }
+    .link:nth-child(2) {
+        margin-top: 0;
+    }
     /* -----main-----*/
     .athlets,
     .players {
         padding-top: 85px;
     }
     .title-type {
-        font-size: 8.8rem;
+        font-size: 8rem;
         line-height: 0.9em;
     }
     .athlets .title-type {
@@ -420,11 +422,6 @@ body {
         top: 95px;
         right: 38%;
     }
-    .items-menu {
-        font-size: 1.6rem;
-        line-height: 1.75em;
-        letter-spacing: 0.8px;
-    }
     .athlets .items-menu {
         padding: 42px 4% 36px 38%;
     }
@@ -434,7 +431,7 @@ body {
     .number {
         font-size: 1.8rem;
         margin-right: 14px;
-        margin-top: -2px;
+        margin-top: 5px;
     }
     .number::after {
         content: "";
@@ -462,6 +459,184 @@ body {
     }
     .text {
         margin-top: 32px;
+        font-size: 1.6rem;
+        line-height: 1.75em;
+        letter-spacing: 0.8px;
+    }
+    .active-items {
+        padding: 0 9.3% 105px 4%;
+        margin-top: -90px;
+        position: relative;
+    }
+    .active .title {
+        font-size: 8rem;
+        margin-top: 54px;
+        line-height: 0.8em;
+    }
+    .square {
+        width: 116px;
+        height: 116px;
+    }
+    .active .number {
+        font-size: 2.4rem;
+        line-height: 1.4em;
+        letter-spacing: 1.2px;
+    }
+    .active .number::after {
+        content: "";
+        width: 28px;
+        height: 5px;
+    }
+    .active .text {
+        font-size: 2.4rem;
+        line-height: 1.1em;
+        letter-spacing: 1.2px;
+        margin-top: 37px;
+    }
+    /*-----footer-----*/
+    .footer {
+        padding-top: 16.4%;
+    }
+    .footer .container {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .logo-footer {
+        width: 130px;
+        height: 137px;
+        border-radius: 20%;
+    }
+    .logo-small {
+        width: 103px;
+        height: 90px;
+    }
+    .download {
+        font-size: 8rem;
+        line-height: 1em;
+        margin-top: 80px;
+    }
+    .show {
+        font-size: 3.6rem;
+        line-height: 1em;
+    }
+    .footer-store {
+        margin-top: 285px;
+    }
+    .down {
+        margin-top: 55px;
+    }
+}
+
+@media (min-width: 961px) {
+    /*-----header---min-width-961px----*/
+    .welcome {
+        background-image: url("../img/football_1920.jpg");
+        padding-top: 2.5%;
+        padding-bottom: 5.7%;
+    }
+    .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .logo-big {
+        width: 191px;
+        height: 52px;
+    }
+    .slogan {
+        width: 100%;
+        align-items: flex-start;
+        font-size: 9rem;
+        line-height: 1.1em;
+        margin: 295px auto 0;
+    }
+    .slogan-item {
+        margin-top: 0;
+    }
+    .stores {
+        margin-top: 222px;
+        display: flex;
+        justify-content: center;
+    }
+    .link {
+        width: 311px;
+        height: 77px;
+        justify-content: center;
+        font-size: 1.4rem;
+        border-radius: 40px;
+        padding-left: 0;
+    }
+    .link svg {
+        width: 40px;
+        height: 45px;
+        margin-right: 28px;
+    }
+    .link:nth-child(2) {
+        margin-top: 0;
+        margin-left: 50px;
+    }
+    /* -----main---min-width-961px----*/
+    .athlets,
+    .players {
+        padding-top: 115px;
+    }
+    .title-type {
+        font-size: 8rem;
+        line-height: 0.9em;
+    }
+    .athlets .title-type {
+        padding-left: 50%;
+    }
+    .menu {
+        margin-top: 108px;
+    }
+    .athlets::before {
+        content: "";
+        background-image: url("../img/footballer_566.png");
+        background-size: 566px 908px;
+        right: 19%;
+        height: 908px;
+        top: 50px;
+    }
+    .athlets .items-menu {
+        padding: 55px 10.4% 54px 50%;
+    }
+    .title-items {
+        font-size: 3.6rem;
+    }
+    .players .title-type {
+        padding-left: 9.9%;
+        padding-right: 51.3%;
+    }
+    .players::before {
+        content: "";
+        background-image: url("../img/basketballer_991.png");
+        background-size: 991px 815px;
+        top: 40px;
+        right: 0;
+        width: 436px;
+    }
+    .players .items-menu {
+        padding: 42px 40% 36px 4%;
+    }
+    .items-menu:first-child {
+        padding-top: 0px;
+        background-color: #ffffff;
+    }
+    .text {
+        margin-top: 20px;
+        font-size: 2rem;
+        line-height: 1.2em;
+        letter-spacing: 1px;
+    }
+    .number {
+        font-size: 1.8rem;
+        margin-right: 12px;
+        margin-top: 9px;
+    }
+    .number::after {
+        content: "";
+        width: 21px;
+        height: 5px;
     }
     .active-items {
         padding: 0 9.3% 105px 4%;
@@ -492,11 +667,11 @@ body {
         letter-spacing: 1.2px;
         margin-top: 37px;
     }
-    /*-----footer-----*/
+    /*-----footer---min-width-961px----*/
     .footer {
         padding-top: 16.4%;
     }
-    .container {
+    .footer .container {
         padding-left: 4%;
         padding-right: 4%;
     }
@@ -524,4 +699,7 @@ body {
     .down {
         margin-top: 55px;
     }
+}
+
+
 }
