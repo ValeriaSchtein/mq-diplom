@@ -1,0 +1,375 @@
+                .athlets,
+                .players {
+                    padding-top: 20px;
+                    position: relative;
+                }
+                
+                .title-type {
+                    font-size: 5rem;
+                    line-height: 1em;
+                    padding-left: 6.25%;
+                    padding-right: 6.25%;
+                }
+                
+                .menu {
+                    margin-top: 245px;
+                }
+                
+                .athlets::before {
+                    content: "";
+                    background-image: url("../img/footballer_192.png");
+                    position: absolute;
+                    background-size: 192px 281px;
+                    background-position: top center;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 100%;
+                    top: 80px;
+                }
+                
+                .items-menu {
+                    padding: 60px 6.25% 55px;
+                }
+                
+                .items-menu:first-child {
+                    padding-top: 83px;
+                    background-color: #fafafa;
+                }
+                
+                .items-menu:nth-child(2) {
+                    background-color: #f5f4f9;
+                }
+                
+                .items-menu:nth-child(3) {
+                    background-color: #8765dd;
+                }
+                
+                .items-menu:nth-child(3) .text {
+                    color: #ffffff;
+                }
+                
+                .title-items {
+                    display: flex;
+                }
+                
+                .number {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    color: #000000;
+                    margin-right: 10px;
+                    margin-top: 3px;
+                }
+                
+                .number:nth-child(3) {
+                    color: #ffffff;
+                }
+                
+                .number::after {
+                    content: "";
+                    display: block;
+                    width: 16px;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #5e42b0;
+                }
+                
+                .items-menu:nth-child(3) .number::after {
+                    background-color: #ffffff;
+                }
+                
+                .players::before {
+                    content: "";
+                    background-image: url("../img/basketballer_302.png");
+                    position: absolute;
+                    background-size: 302px 248px;
+                    background-position: top center;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 100%;
+                    top: 80px;
+                }
+                
+                .players .items-menu:nth-child(3) {
+                    background-color: #090c35;
+                }
+                
+                .players .items-menu:nth-child(3) {
+                    color: #ffffff;
+                }
+                
+                .players .items-menu:nth-child(3) .number {
+                    color: #8765dd;
+                }
+                
+                .text {
+                    margin-top: 27px;
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                    letter-spacing: 0.75px;
+                }
+                
+                .active-items {
+                    padding: 0 4% 100px;
+                    margin-top: -60px;
+                    position: relative;
+                }
+                
+                .active .title {
+                    font-size: 2.8rem;
+                    margin-top: 24px;
+                }
+                
+                .square {
+                    display: flex;
+                    width: 70px;
+                    height: 70px;
+                    background-color: #5e42b0;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .active .number {
+                    color: #ffffff;
+                    margin: 0;
+                }
+                
+                .active .number::after {
+                    background-color: #8e7bc8;
+                }
+                /*=====MEDIA QUARIES====*/
+                
+                @media (min-width: 641px) and (max-width: 960px) {
+                    .athlets,
+                    .players {
+                        padding-top: 85px;
+                    }
+                    .title-type {
+                        font-size: 8rem;
+                        line-height: 0.9em;
+                    }
+                    .athlets .title-type {
+                        padding-left: 38%;
+                    }
+                    .menu {
+                        margin-top: 60px;
+                    }
+                    .athlets::before {
+                        content: "";
+                        background-image: url("../img/footballer_497.png");
+                        background-size: 497px 699px;
+                        top: 95px;
+                        right: 38%;
+                    }
+                    .athlets .items-menu {
+                        padding: 42px 4% 36px 38%;
+                    }
+                    .title-items {
+                        font-size: 3.2rem;
+                    }
+                    .number {
+                        font-size: 1.8rem;
+                        margin-right: 14px;
+                        margin-top: 5px;
+                    }
+                    .number::after {
+                        content: "";
+                        width: 19px;
+                        height: 5px;
+                    }
+                    .players .title-type {
+                        padding-left: 4.4%;
+                        padding-right: 38%;
+                    }
+                    .players::before {
+                        content: "";
+                        background-image: url("../img/basketballer_436.png");
+                        background-size: 436px 565px;
+                        top: 40px;
+                        right: 0;
+                        width: 436px;
+                    }
+                    .players .items-menu {
+                        padding: 42px 40% 36px 4%;
+                    }
+                    .items-menu:first-child {
+                        padding-top: 0px;
+                        background-color: #ffffff;
+                    }
+                    .text {
+                        margin-top: 32px;
+                        font-size: 1.6rem;
+                        line-height: 1.75em;
+                        letter-spacing: 0.8px;
+                    }
+                    .active-items {
+                        padding: 0 9.3% 105px 4%;
+                        position: relative;
+                    }
+                    .active .title {
+                        font-size: 8rem;
+                        margin-top: 54px;
+                        line-height: 0.8em;
+                    }
+                    .photo,
+                    .photo-img {
+                        margin-bottom: 80px;
+                    }
+                    .square {
+                        width: 116px;
+                        height: 116px;
+                        position: absolute;
+                        margin-top: -160px;
+                    }
+                    .active .number {
+                        font-size: 2.4rem;
+                        line-height: 1.4em;
+                        letter-spacing: 1.2px;
+                    }
+                    .active .number::after {
+                        content: "";
+                        width: 28px;
+                        height: 5px;
+                    }
+                    .active .text {
+                        font-size: 2.4rem;
+                        line-height: 1.1em;
+                        letter-spacing: 1.2px;
+                        margin-top: 37px;
+                    }
+                }
+                
+                @media (min-width: 961px) {
+                    .athlets,
+                    .players {
+                        padding-top: 115px;
+                    }
+                    .title-type {
+                        font-size: 8rem;
+                        line-height: 0.9em;
+                    }
+                    .athlets .title-type {
+                        padding-left: 50%;
+                    }
+                    .menu {
+                        margin-top: 108px;
+                    }
+                    .athlets::before {
+                        content: "";
+                        background-image: url("../img/footballer_566.png");
+                        background-size: 30vw;
+                        right: 20%;
+                        height: 908px;
+                        top: 50px;
+                    }
+                    .athlets .items-menu {
+                        padding: 55px 10.4% 54px 50%;
+                    }
+                    .title-items {
+                        font-size: 3.6rem;
+                    }
+                    .players .title-type {
+                        padding-left: 10.15%;
+                    }
+                    .players::before {
+                        content: "";
+                        background-image: url("../img/basketballer_991.png");
+                        background-size: 51.6vw;
+                        background-position: right center;
+                        top: 0;
+                        right: 6.5%;
+                        width: 991px;
+                        height: 815px;
+                    }
+                    .players .items-menu {
+                        padding: 55px 51.5% 55px 10.15%;
+                    }
+                    .items-menu:first-child {
+                        padding-top: 0px;
+                        background-color: #ffffff;
+                    }
+                    .text {
+                        margin-top: 20px;
+                        font-size: 2rem;
+                        line-height: 1.2em;
+                        letter-spacing: 1px;
+                    }
+                    .number {
+                        font-size: 1.8rem;
+                        margin-right: 12px;
+                        margin-top: 9px;
+                    }
+                    .number::after {
+                        content: "";
+                        width: 21px;
+                        height: 5px;
+                    }
+                    .active {
+                        display: flex;
+                    }
+                    .photo,
+                    .active-items {
+                        width: 50%;
+                    }
+                    .photo-img {
+                        min-height: 730px;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .active-items {
+                        display: flex;
+                        flex-wrap: wrap;
+                        position: relative;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        padding: 0;
+                        padding-left: 9.5%;
+                        padding-right: 4%;
+                    }
+                    .active .title {
+                        margin-top: 45px;
+                        font-size: 8rem;
+                        line-height: 1em;
+                    }
+                    .square {
+                        width: 168px;
+                        height: 155px;
+                        position: absolute;
+                        right: calc(100% - 84px);
+                    }
+                    .active .number {
+                        font-size: 2.4rem;
+                        line-height: 1.4em;
+                        letter-spacing: 1.2px;
+                    }
+                    .active .number::after {
+                        content: "";
+                        width: 28px;
+                        height: 5px;
+                    }
+                    .active .text {
+                        font-size: 2.4rem;
+                        line-height: 1.16em;
+                        letter-spacing: 1.2px;
+                        margin-top: 115px;
+                    }
+                    .active:nth-child(2) {
+                        flex-direction: row-reverse;
+                    }
+                    .active:nth-child(2) .active-items {
+                        position: relative;
+                        padding-left: 4%;
+                        padding-right: 130px;
+                    }
+                    .active:nth-child(2) .title {
+                        order: -1;
+                        margin-left: 0;
+                    }
+                    .active:nth-child(2) .square {
+                        position: absolute;
+                        left: calc(100% - 84px);
+                    }
+                    .active:nth-child(2) .text {
+                        padding-left: 0;
+                        margin-top: 75px;
+                    }
+                }

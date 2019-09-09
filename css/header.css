@@ -1,0 +1,212 @@
+                        /*======HEADER===-width---min-640px-====*/
+                        
+                        .welcome {
+                            box-sizing: border-box;
+                            background-image: url("../img/football_767.jpg");
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;
+                            position: relative;
+                            padding-top: 10%;
+                            padding-bottom: 26%;
+                        }
+                        
+                        .welcome::after {
+                            content: "";
+                            background-color: #0a0e34;
+                            opacity: 0.9;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                        }
+                        
+                        .container {
+                            display: flex;
+                            position: relative;
+                            width: 100%;
+                            padding-left: 6.25%;
+                            padding-right: 6.25%;
+                            flex-direction: column;
+                            color: #ffffff;
+                            z-index: 2;
+                        }
+                        
+                        .logo {
+                            align-self: center;
+                            width: 133px;
+                            height: 36px;
+                            background-image: url("../img/svg/surface_logo_text_wight.svg");
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;
+                        }
+                        
+                        .slogan {
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 2.8rem;
+                            line-height: 1.1em;
+                            letter-spacing: 1.4px;
+                            margin-top: 137px;
+                        }
+                        
+                        .slogan-item {
+                            display: block;
+                            margin-top: 30px;
+                            align-self: flex-end;
+                            min-width: 215px;
+                            margin-left: 16%;
+                        }
+                        
+                        .stores {
+                            margin-top: 90px;
+                            align-self: center;
+                            width: 100%;
+                        }
+                        
+                        .link {
+                            display: flex;
+                            width: 100%;
+                            height: 35px;
+                            background-color: #5e42b0;
+                            border-radius: 17px;
+                            padding-left: calc(50% - 55px);
+                            font-size: 0.8rem;
+                            align-items: center;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            color: #ffffff;
+                        }
+                        
+                        .app-store::before,
+                        .google-store::before {
+                            content: "";
+                            width: 22px;
+                            height: 24px;
+                            background-position: left center;
+                            background-repeat: no-repeat;
+                            margin-right: 10px;
+                        }
+                        
+                        .app-store::before {
+                            background-image: url("../img/svg/apple_logo_wight.svg");
+                        }
+                        
+                        .google-store::before {
+                            background-image: url("../img/svg/google-play_wight.svg");
+                        }
+                        
+                        .link:hover {
+                            background-color: #c1c1c1;
+                            color: #51349e;
+                            transition: 0.3s;
+                        }
+                        
+                        .link:nth-child(2) {
+                            margin-top: 14px;
+                        }
+                        
+                        .text-store {
+                            display: block;
+                            font-weight: 700;
+                        }
+                        /*=====MEDIA QUARIES====*/
+                        
+                        @media (min-width: 641px) and (max-width: 960px) {
+                            .welcome {
+                                padding-top: 5.5%;
+                                padding-bottom: 11.7%;
+                            }
+                            .container {
+                                padding-left: 7.8%;
+                                padding-right: 7.8%;
+                            }
+                            .logo {
+                                width: 205px;
+                                height: 56px;
+                            }
+                            .slogan {
+                                display: flex;
+                                flex-direction: column;
+                                font-size: 6.4rem;
+                                margin-top: 180px;
+                            }
+                            .slogan-item {
+                                min-width: 488px;
+                                margin-top: 0;
+                                margin-left: 15.6%;
+                            }
+                            .stores {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: 312px;
+                            }
+                            .link {
+                                width: 48%;
+                                height: 77px;
+                                justify-content: center;
+                                font-size: 1.4rem;
+                                border-radius: 40px;
+                                padding-left: 0;
+                            }
+                            .app-store::before,
+                            .google-store::before {
+                                width: 40px;
+                                height: 45px;
+                                margin-right: 28px;
+                            }
+                            .link:nth-child(2) {
+                                margin-top: 0;
+                            }
+                        }
+                        
+                        @media (min-width: 961px) {
+                            .welcome {
+                                background-image: url("../img/football_1920.jpg");
+                                padding-top: 2.5%;
+                                padding-bottom: 5.7%;
+                            }
+                            .container {
+                                padding-left: 9%;
+                                padding-right: 9%;
+                            }
+                            .logo {
+                                width: 191px;
+                                height: 52px;
+                            }
+                            .slogan {
+                                width: 100%;
+                                align-items: flex-start;
+                                font-size: 9rem;
+                                line-height: 1.1em;
+                                margin: 295px auto 0;
+                            }
+                            .slogan-item {
+                                margin-top: 0;
+                            }
+                            .stores {
+                                margin-top: 222px;
+                                display: flex;
+                                justify-content: center;
+                            }
+                            .link {
+                                width: 311px;
+                                height: 77px;
+                                justify-content: center;
+                                font-size: 1.4rem;
+                                border-radius: 40px;
+                                padding-left: 0;
+                            }
+                            .app-store::before,
+                            .google-store::before {
+                                width: 42px;
+                                height: 50px;
+                                margin-right: 28px;
+                            }
+                            .link:nth-child(2) {
+                                margin-top: 0;
+                                margin-left: 50px;
+                            }
+                        }
