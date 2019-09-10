@@ -36,9 +36,7 @@
     background-image: url("../img/svg/surface_logo_wight.svg");
     width: 47px;
     height: 55px;
-    position: absolute;
     background-repeat: no-repeat;
-    background-position: center center;
 }
 
 .download {
@@ -120,7 +118,6 @@
     .logo-footer {
         width: 130px;
         height: 137px;
-        border-radius: 20%;
     }
     .logo-footer::after {
         width: 103px;
